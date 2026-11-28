@@ -240,3 +240,18 @@
   max-width: 82%;
   max-height: calc(var(--gallery-image-height) * .82);
 }
+
+main.wrap > .section:last-child {
+  padding-bottom: clamp(24px, 3vw, 36px);
+}
+.foot {
+  padding: 22px 0 26px;
+}
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-bottom: .4rem;
+}
