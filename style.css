@@ -141,3 +141,48 @@
 @media (max-width: 720px) {
   .project-demos { order: initial; }
 }
+
+.site-header .nav {
+  justify-content: flex-end;
+}
+.site-header .nav > .links {
+  margin-inline-start: auto;
+  justify-content: flex-end;
+}
+
+.project-media {
+  --gallery-image-height: clamp(220px, 42vw, 420px);
+}
+.media-stage {
+  display: grid;
+  place-items: center;
+  block-size: var(--gallery-image-height);
+}
+.media-stage > .research-image {
+  width: 100%;
+  min-width: 0;
+}
+.media-stage img {
+  max-height: var(--gallery-image-height);
+}
+.media-stage > .satellite-render {
+  width: min(100%, calc(var(--gallery-image-height) * 1381 / 853));
+}
+.media-stage .satellite-render img {
+  max-height: none;
+}
+
+/* Overlay the slides once the carousel initializes so the tallest caption
+   sets the caption space for every slide. */
+.media-slides:has(> .media-slide[hidden]) {
+  display: grid;
+}
+.media-slides:has(> .media-slide[hidden]) > .media-slide {
+  grid-area: 1 / 1;
+  min-width: 0;
+  margin-top: 0;
+}
+.media-slides > .media-slide[hidden] {
+  display: block;
+  visibility: hidden;
+}
