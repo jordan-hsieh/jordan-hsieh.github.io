@@ -74,3 +74,15 @@
 @media (max-width: 480px) {
   .video-pair { grid-template-columns: 1fr; }
 }
+
+/* Quiet navigation and homepage profile links. */
+.nav .links{margin-left:0}
+.profile-links{display:flex;align-items:center;gap:10px;margin-top:22px}
+.profile-links a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;color:var(--muted);border:1px solid var(--line);border-radius:50%;transition:color .15s,background-color .15s}
+.profile-links a:hover{color:var(--blue);background:var(--pale);text-decoration:none}
+@media(max-width:480px){
+ .nav{flex-wrap:nowrap;gap:12px}
+ .nav .links{order:0;width:auto;flex-wrap:nowrap;gap:12px}
+ .theme-toggle{margin-left:auto;font-size:.8rem}
+}
+@media(prefers-reduced-motion:reduce){.profile-links a{transition:none}}
