@@ -116,7 +116,7 @@
   max-height: none;
   border-radius: 0;
 }
-.research-image.energy-render {
+:root .research-image.energy-render {
   background: #fff;
   overflow: hidden;
   border-radius: 8px;
