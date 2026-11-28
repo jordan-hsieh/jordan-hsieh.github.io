@@ -16,7 +16,6 @@
 .hero .eyebrow { letter-spacing: .1em; }
 .hero .actions { margin-top: 22px; }
 .home-about { scroll-margin-top: 120px; }
-.home-about p { max-width: 65ch; }
 .project-gallery {
   min-width: 0;
   display: grid;
@@ -29,8 +28,6 @@
   .project:nth-of-type(even) .project-gallery { order: 0; }
 }
 
-.about-teaching { margin-top: 2rem; }
-.about-teaching p { max-width: 65ch; }
 .home-about .about-grid { margin-top: 2rem; }
 .project-media { min-width: 0; }
 .research-project { grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); }
