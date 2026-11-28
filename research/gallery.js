@@ -10,7 +10,6 @@ document.querySelectorAll(".project-media").forEach((gallery) => {
     current = (index + slides.length) % slides.length;
     slides.forEach((slide, position) => {
       slide.hidden = position !== current;
-      if (slide.hidden) slide.querySelectorAll("video").forEach((video) => video.pause());
     });
     count.textContent = `${current + 1} / ${slides.length}`;
   }
