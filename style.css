@@ -235,3 +235,8 @@
   font-variant-numeric: tabular-nums;
   line-height: 1.55rem;
 }
+
+.media-stage .satellite-hardware img {
+  max-width: 82%;
+  max-height: calc(var(--gallery-image-height) * .82);
+}
