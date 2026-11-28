@@ -212,3 +212,13 @@
 .affiliation-logo--michigan { background: #00274c; }
 .affiliation-logo--michigan img,
 .affiliation-logo--tensor img { width: 76%; height: 76%; }
+
+.page-head .page-intro {
+  max-width: none;
+}
+@media (min-width: 721px) {
+  .page-head .page-intro {
+    text-align: justify;
+    text-align-last: start;
+  }
+}
