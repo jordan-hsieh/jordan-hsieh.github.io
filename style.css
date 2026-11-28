@@ -103,8 +103,26 @@
   background: transparent;
   border-radius: 8px;
 }
-.research-image img[src$="/satellite-illustration.png"] {
-  object-position: center 44%;
+.research-image.satellite-render {
+  position: relative;
+  aspect-ratio: 1381 / 853;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.satellite-render img {
+  position: absolute;
+  inset: auto 0 0;
+  width: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+.research-image.energy-render {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.energy-render img {
+  border-radius: 0;
 }
 .project-demos {
   grid-column: 1 / -1;
